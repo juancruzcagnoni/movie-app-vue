@@ -235,3 +235,35 @@ footer {
 .materia{
     color: #570707;
 }
+
+// Mediaquerie
+@media (max-width: 576px) {
+  .nav2{
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+      margin-bottom: 2rem;
+    }
+  }
+
+  .favorite-movies{
+    width: 90%;
+
+    li{
+      width: 80%;
+    }
+  }
+
+  .footer{
+    flex-direction: column;
+
+    img{
+      margin-bottom: 2rem;
+    }
+
+    .social{
+      margin-top: 2rem;
+    }
+  }
+}
