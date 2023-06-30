@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinephile</title>
+    <link rel="shortcut icon" href="img/logo-fi.png" type="image/x-icon">
+    <!-- Vue.js 2.x CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-md mt-4">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="#"><img src="img/logo-wh.png" alt="Logo Cinephile" width="150"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Peliculas  -->
+    <div id="app">
+        <div class="container mt-5">
+            <div class="d-flex justify-content-between mb-5">
+                <div>
+                    <h1>Películas Populares</h1>
+                </div>
+                <!-- Filtrar  -->
+                <div class="filter">
+                    <label for="genreFilter">Filtrar por género:</label>
+                    <select id="genreFilter" v-model="selectedGenre">
+                        <option value="">Todos</option>
+                        <option v-for="genre in genres" :value="genre">{{ genre }}</option>
+                    </select>
+                    <button @click="filterMoviesByGenre">Filtrar</button>
+                </div>
+            </div>
+
+            <!-- Buscador -->
+            <div class="search-bar mb-4 text-center">
+                <input type="text" v-model="searchQuery" placeholder="Buscar por título">
+                <button @click="filterMovies" class="btn btn-primary">Buscar</button>
+            </div>
+
+            <!-- Listado hecho con componente -->
+            <div class="row">
+                <movie-card v-for="movie in filteredMovies" :key="movie.id" :movie="movie"
+                    @open-modal="openModal"></movie-card>
+            </div>
+        </div>
+
+        <!-- Lista de películas favoritas -->
+        <div class="favorite-movies mt-5">
+            <div class="container">
+                <h2>Mis peliculas favoritas</h2>
+                <ul>
+                    <li v-for="movie in favoriteMovies" :key="movie.id">{{ movie.title }}</li>
+                </ul>
+                <p v-if="favoriteMovies.length === 0">No tienes películas favoritas aún.</p>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal" :class="{ 'modal-open': isModalOpen }" v-if="selectedMovie">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">{{ selectedMovie.title }}</h5>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-12 col-md-4"><img :src="selectedMovie.poster" alt="Póster de la película"
+                                class="img-fluid"></div>
+                        <div class="col-12 col-md-8">
+                            <!-- Contenido de la ventana modal -->
+                            <p>{{ selectedMovie.description }}</p>
+                            <p>Género: {{ selectedMovie.genre }}</p>
+                            <p>Año: {{ selectedMovie.year }}</p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-fav" @click="addToFavorites(selectedMovie)">
+                            <span v-if="!isFavorite(selectedMovie.id)">Agregar a favoritos</span>
+                            <span v-else>Eliminar de favoritos</span>
+                        </button>
+                        <button type="button" class="btn btn-cerrar" @click="closeModal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div><img src="img/logo-wh.png" alt="Logo Cinephile" width="150"></div>
+                <div class="text-center">
+                    <p class="m-0">&copy; Cinephile All Rights reserved.</p>
+                    <p class="m-0 materia">Aplicaciones para Dispositivos Moviles.</p>
+                </div>
+                <div>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- JS  -->
+    <script src="app.js"></script>
+</body>
+
+</html>

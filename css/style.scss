@@ -1,0 +1,237 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// Colors
+$black: #181818;
+$white: #f2f2f2;
+$red: #c51717;
+
+// Normalize
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: $black;
+}
+
+// Navbar
+.navbar {
+  background-color: $black;
+}
+
+.nav-link {
+  color: $white;
+}
+
+.nav-link:hover {
+  color: $red;
+}
+
+// Movies
+h1, h2 {
+  font-size: 1.6rem;
+  color: $white;
+  font-weight: 700;
+}
+
+.search-bar {
+    margin-top: 5rem;
+
+  input {
+    border: none;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    font-size: 0.9rem;
+    height: 2rem;
+    padding-left: 1rem;
+  }
+
+  button {
+    border-radius: 0;
+    border: none;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: $red;
+    font-size: 0.9rem;
+
+  }
+
+  button:hover {
+    background-color: #570707;
+  }
+}
+
+.filter {
+  label {
+    color: $white;
+    font-size: 0.9rem;
+  }
+
+  select {
+    border: none;
+    padding: 0.3rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+
+  }
+
+  button {
+    padding: 0.5rem 0.8rem;
+    color: $white;
+    border-radius: 0;
+    border: none;
+    border-radius: 7px;
+    background-color: $red;
+    font-size: 0.9rem;
+
+  }
+}
+
+.card-container {
+  height: 25rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: $white;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+
+  h2 {
+    color: $red;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  button {
+    border: none;
+    border-radius: 7px;
+    padding: 0.5rem 0.8rem;
+    color: $white;
+    background-color: $red;
+    font-size: 0.9rem;
+  }
+}
+
+.img-container {
+  height: 85%;
+  overflow: hidden;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+// Modal
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  padding: 20px;
+  max-width: 600px;
+}
+
+.modal-title {
+  color: $red;
+}
+
+.modal-body {
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-fav {
+  background-color: $red;
+  color: $white;
+  font-size: 0.9rem;
+}
+
+.btn-fav:hover{
+    background-color: #570707;
+    color: $white;
+}
+
+.btn-cerrar {
+  background-color: $black;
+  color: $white;
+  font-size: 0.9rem;
+}
+
+.btn-cerrar:hover {
+  background-color: $black;
+  color: $white;
+}
+
+// Favorites
+.favorite-movies{
+    text-align: center;
+    background-color: $red;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 20px;
+
+    h2, p, li{
+        color: $white;
+    }
+
+    h2{
+        margin-bottom: 2rem;
+    }
+
+    li{
+        list-style: none;
+        padding: 0.2rem 0.5rem;
+        background-color: #570707;
+        margin: 0 auto;
+        margin-bottom: 0.3rem;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        width: 50%;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+}
+
+// Footer
+footer {
+    margin-top: 5rem;
+    background-color: $red;
+    padding: 5rem 0;
+
+    p{
+        color: $white;
+    }
+
+    i{
+        color: $white;
+        padding: 0.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+.materia{
+    color: #570707;
+}

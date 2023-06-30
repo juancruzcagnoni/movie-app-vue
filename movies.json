@@ -1,0 +1,163 @@
+[
+    {
+      "id": 1,
+      "title": "Avengers: Endgame",
+      "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more to undo Thanos' actions and restore order to the universe.",
+      "year": 2019,
+      "poster": "img/avengers.png",
+      "genre": "Action"
+    },
+    {
+      "id": 2,
+      "title": "Spider-Man: No Way Home",
+      "description": "Following the events of Spider-Man: Far From Home, Peter Parker's secret identity is revealed, and he seeks the help of Doctor Strange to undo the damage while facing villains from different realities.",
+      "year": 2021,
+      "poster": "img/spiderman.png",
+      "genre": "Action, Adventure"
+    },
+    {
+      "id": 3,
+      "title": "Black Widow",
+      "description": "Natasha Romanoff confronts her past and deals with unfinished business as she becomes a spy on the run and faces off against a dangerous conspiracy.",
+      "year": 2021,
+      "poster": "img/blackwidow.png",
+      "genre": "Action, Adventure"
+    },
+    {
+      "id": 4,
+      "title": "Joker",
+      "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated. He embarks on a downward spiral of revolution and bloody crime, eventually becoming the iconic Joker.",
+      "year": 2019,
+      "poster": "img/joker.png",
+      "genre": "Crime, Drama, Thriller"
+    },
+    {
+      "id": 5,
+      "title": "Inception",
+      "description": "A thief with the ability to enter people's dreams is given the task of planting an idea into the mind of a CEO.",
+      "year": 2010,
+      "poster": "img/inception.png",
+      "genre": "Action, Adventure, Sci-Fi"
+    },
+    {
+      "id": 6,
+      "title": "Interstellar",
+      "description": "A team of explorers undertakes a mission to travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "year": 2014,
+      "poster": "img/interstellar.png",
+      "genre": "Adventure, Drama, Sci-Fi"
+    },
+    {
+      "id": 7,
+      "title": "The Dark Knight",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "year": 2008,
+      "poster": "img/darknight.png",
+      "genre": "Action, Crime, Drama"
+    },
+    {
+      "id": 8,
+      "title": "The Shawshank Redemption",
+      "description": "Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.",
+      "year": 1994,
+      "poster": "img/shawshank.png",
+      "genre": "Drama"
+    },
+    {
+      "id": 9,
+      "title": "Fight Club",
+      "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+      "year": 1999,
+      "poster": "img/flight.png",
+      "genre": "Drama"
+    },
+    {
+      "id": 10,
+      "title": "Pulp Fiction",
+      "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "year": 1994,
+      "poster": "img/pulp.png",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 11,
+      "title": "The Godfather",
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "year": 1972,
+      "poster": "img/godfather.png",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 12,
+      "title": "The Matrix",
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "year": 1999,
+      "poster": "img/matrix.png",
+      "genre": "Action, Sci-Fi"
+    },
+    {
+      "id": 13,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "year": 2001,
+      "poster": "img/lord.png",
+      "genre": "Action, Adventure, Drama"
+    },
+    {
+      "id": 14,
+      "title": "Forrest Gump",
+      "description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+      "year": 1994,
+      "poster": "img/forrestgump.png",
+      "genre": "Drama, Romance"
+    },
+    {
+      "id": 15,
+      "title": "The Avengers",
+      "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+      "year": 2012,
+      "poster": "img/theavengers.png",
+      "genre": "Action, Adventure, Sci-Fi"
+    },
+    {
+      "id": 16,
+      "title": "The Lion King",
+      "description": "A young lion prince flees his kingdom after the murder of his father while learning the true meaning of responsibility and bravery.",
+      "year": 1994,
+      "poster": "img/lion.png",
+      "genre": "Animation, Adventure, Drama"
+    },
+    {
+      "id": 17,
+      "title": "Titanic",
+      "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+      "year": 1997,
+      "poster": "img/titanic.png",
+      "genre": "Drama, Romance"
+    },
+    {
+      "id": 18,
+      "title": "The Dark Knight Rises",
+      "description": "Eight years after the Joker's reign of anarchy, Batman is forced out of retirement and must confront a new threat: Bane.",
+      "year": 2012,
+      "poster": "img/batman.png",
+      "genre": "Action, Adventure"
+    },
+    {
+      "id": 19,
+      "title": "Inglourious Basterds",
+      "description": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
+      "year": 2009,
+      "poster": "img/inglorious.png",
+      "genre": "Adventure, Drama, War"
+    },
+    {
+      "id": 20,
+      "title": "The Social Network",
+      "description": "Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but success leads to personal and legal complications.",
+      "year": 2010,
+      "poster": "img/social.png",
+      "genre": "Biography, Drama"
+    }
+  ]
+  

@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #181818;
+}
+
+.navbar {
+  background-color: #181818;
+}
+
+.nav-link {
+  color: #f2f2f2;
+}
+
+.nav-link:hover {
+  color: #c51717;
+}
+
+h1, h2 {
+  font-size: 1.6rem;
+  color: #f2f2f2;
+  font-weight: 700;
+}
+
+.search-bar {
+  margin-top: 5rem;
+}
+.search-bar input {
+  border: none;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  font-size: 0.9rem;
+  height: 2rem;
+  padding-left: 1rem;
+}
+.search-bar button {
+  border-radius: 0;
+  border: none;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: #c51717;
+  font-size: 0.9rem;
+}
+.search-bar button:hover {
+  background-color: #570707;
+}
+
+.filter label {
+  color: #f2f2f2;
+  font-size: 0.9rem;
+}
+.filter select {
+  border: none;
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+.filter button {
+  padding: 0.5rem 0.8rem;
+  color: #f2f2f2;
+  border-radius: 0;
+  border: none;
+  border-radius: 7px;
+  background-color: #c51717;
+  font-size: 0.9rem;
+}
+
+.card-container {
+  height: 25rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #f2f2f2;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card h2 {
+  color: #c51717;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.card button {
+  border: none;
+  border-radius: 7px;
+  padding: 0.5rem 0.8rem;
+  color: #f2f2f2;
+  background-color: #c51717;
+  font-size: 0.9rem;
+}
+
+.img-container {
+  height: 85%;
+  overflow: hidden;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  padding: 20px;
+  max-width: 600px;
+}
+
+.modal-title {
+  color: #c51717;
+}
+
+.modal-body {
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-fav {
+  background-color: #c51717;
+  color: #f2f2f2;
+  font-size: 0.9rem;
+}
+
+.btn-fav:hover {
+  background-color: #570707;
+  color: #f2f2f2;
+}
+
+.btn-cerrar {
+  background-color: #181818;
+  color: #f2f2f2;
+  font-size: 0.9rem;
+}
+
+.btn-cerrar:hover {
+  background-color: #181818;
+  color: #f2f2f2;
+}
+
+.favorite-movies {
+  text-align: center;
+  background-color: #c51717;
+  width: 40%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.favorite-movies h2, .favorite-movies p, .favorite-movies li {
+  color: #f2f2f2;
+}
+.favorite-movies h2 {
+  margin-bottom: 2rem;
+}
+.favorite-movies li {
+  list-style: none;
+  padding: 0.2rem 0.5rem;
+  background-color: #570707;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  width: 50%;
+}
+.favorite-movies p {
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 5rem;
+  background-color: #c51717;
+  padding: 5rem 0;
+}
+footer p {
+  color: #f2f2f2;
+}
+footer i {
+  color: #f2f2f2;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.materia {
+  color: #570707;
+}/*# sourceMappingURL=style.css.map */
